@@ -4,7 +4,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <DebugType>none</DebugType>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <VintageStoryPath Condition="'$(VintageStoryPath)' == '' and '$(APPDATA)' != ''">$(APPDATA)/Vintagestory</VintageStoryPath>
   </PropertyGroup>
   <ItemGroup>

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+- Renamed the mod to Temporal Fallback. Existing configuration and saved anchors carry over.
+
 ## 1.0.1
 
 - Requires Simple Bed Spawn 1.4.0 and uses its existing bed registration and removal rules.

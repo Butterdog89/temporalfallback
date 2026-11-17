@@ -1,10 +1,10 @@
 {
   "type": "code",
   "modid": "temporalrefuge",
-  "name": "Temporal Refuge",
+  "name": "Temporal Fallback",
   "description": "Your travel bed stays primary. A temporal gear sets a personal fallback that never runs out.",
   "authors": ["BiggDill"],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "side": "server",
   "requiredOnClient": false,
   "requiredOnServer": true,

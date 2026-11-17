@@ -1,6 +1,6 @@
-# Temporal Refuge
+# Temporal Fallback
 
-Temporal Refuge gives Vintage Story players an unlimited backup spawn for when their travel bed is gone.
+Temporal Fallback gives Vintage Story players an unlimited backup spawn for when their travel bed is gone.
 
 ## How it works
 
@@ -14,11 +14,11 @@ Players without a saved refuge use the existing game and bed-mod rules. Everyone
 
 - Vintage Story dedicated server 1.22.7.
 - Simple Bed Spawn 1.4.0 (`palmiersamasimplebedspawn`), enabled on the server.
-- Clients can join without installing Temporal Refuge.
+- Clients can join without installing Temporal Fallback.
 
-Back up your world, put `TemporalRefuge-1.0.1.zip` in your server data directory's `Mods` folder, and restart. Check `Logs/server-main.log` for `[TemporalRefuge] Enabled with Simple Bed Spawn`. The mod uses Simple Bed Spawn's existing settings and bed registration.
+Back up your world, put `TemporalFallback-1.0.2.zip` in your server data directory's `Mods` folder, and restart. Check `Logs/server-main.log` for `[TemporalFallback] Enabled with Simple Bed Spawn`. The mod uses Simple Bed Spawn's existing settings and bed registration.
 
-Remove the Temporal Refuge ZIP and restart to uninstall. Simple Bed Spawn resumes its usual flow, and saved refuge anchors are dormant.
+Remove the Temporal Fallback ZIP and restart to uninstall. Simple Bed Spawn resumes its usual flow, and saved refuge anchors are dormant.
 
 ## Configuration
 

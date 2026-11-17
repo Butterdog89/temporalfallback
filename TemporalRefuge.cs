@@ -56,13 +56,13 @@ public sealed class TemporalRefugeMod : ModSystem
         catch (Exception error)
         {
             harmony.UnpatchAll(harmony.Id);
-            api.Logger.Error("[TemporalRefuge] Refuge disabled. Existing respawn rules are active. {0}", error);
+            api.Logger.Error("[TemporalFallback] Refuge disabled. Existing respawn rules are active. {0}", error);
             return;
         }
 
         Active = this;
         api.Event.PlayerDisconnect += OnPlayerDisconnect;
-        api.Logger.Notification("[TemporalRefuge] Enabled with Simple Bed Spawn. Refuge radius: {0} blocks.", config.Radius);
+        api.Logger.Notification("[TemporalFallback] Enabled with Simple Bed Spawn. Refuge radius: {0} blocks.", config.Radius);
     }
 
     internal bool SetGearAnchor(ServerPlayer player, PlayerSpawnPos pos)
@@ -75,7 +75,7 @@ public sealed class TemporalRefugeMod : ModSystem
         }
 
         player.SetModData(AnchorKey, new[] { pos.x, pos.y ?? (int)player.Entity.Pos.Y, pos.z });
-        Notify(player, $"Temporal refuge saved. Without a valid bed, you can respawn within {config.Radius} blocks of this point.");
+        Notify(player, $"Temporal fallback saved. Without a valid bed, you can respawn within {config.Radius} blocks of this point.");
         return !HasBed(player);
     }
 
@@ -113,7 +113,7 @@ public sealed class TemporalRefugeMod : ModSystem
 
         var request = new RespawnRequest(simulation, player, anchor);
         requests.Add(player.PlayerUID, request);
-        Notify(player, "Finding safe ground near your temporal refuge…");
+        Notify(player, "Finding safe ground near your temporal fallback…");
         request.TimeoutId = api.Event.RegisterCallback(_ => OnTimeout(request), SearchTimeoutMilliseconds);
         FindNext(request);
         return false;
@@ -278,7 +278,7 @@ public sealed class TemporalRefugeMod : ModSystem
 
     private void SearchFailed(RespawnRequest request, Exception error)
     {
-        api.Logger.Warning("[TemporalRefuge] Refuge search ended with an error. {0}", error);
+        api.Logger.Warning("[TemporalFallback] Refuge search ended with an error. {0}", error);
         Retry(request, "The refuge could not load. Press respawn to try again.");
     }
 
