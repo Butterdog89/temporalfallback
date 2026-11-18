@@ -45,6 +45,6 @@ On Windows the path defaults to `%APPDATA%/Vintagestory`. Put the resulting `bin
 
 This release uses the Vintage Story respawn handler and Simple Bed Spawn 1.4.0's registration data. Retest after updating either one or adding another mod that changes respawns. Existing forced role spawns still use the game's own rules.
 
-Design and original handover by **BiggDill**. Implementation and verification assisted by Codex (GPT-6). Uses Harmony supplied by the game.
+Design **BiggDill**
 
 [Simple Bed Spawn on ModDB](https://mods.vintagestory.at/palmiersamasimplebedspawn) · [Vintage Story API](https://apidocs.vintagestory.at/) · [Harmony](https://github.com/pardeike/Harmony)
